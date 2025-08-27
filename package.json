@@ -2,9 +2,10 @@
   "name": "devto-syntax",
   "displayName": "Dev.to Syntax",
   "description": "Auto-configure VSCode to mimic dev.to code block styling: Fira Code ligatures, color theme, icon theme, bracket and indent styling.",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "publisher": "MiltonVafanaZW",
   "icon": "icon.png",
+  "keywords": ["theme", "syntax", "highlight", "dev.to"],
   "repository": {"url": "https://github.com/nia-cloud-official/Dev.to-Syntax", "type": "public"},
   "engines": {
     "vscode": "^1.50.0"
@@ -18,29 +19,29 @@
   "activationEvents": [
     "*"
   ],
-  "contributes": {
-    "configurationDefaults": {
-      "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-      "editor.fontLigatures": true,
-      "editor.fontWeight": "400",
-      "editor.fontSize": 14,
-      "workbench.colorTheme": "Dev.to Syntax",
-      "workbench.iconTheme": "material-icon-theme",
-      "editor.guides.indentation": true
-    },
-    "themes": [
-      {
-        "label": "Dev.to Syntax",
-        "uiTheme": "vs-light",
-        "path": "./themes/devto-syntax-color-theme.json"
-      }
-    ],
-    "extensionDependencies": [
-      "PKief.material-icon-theme",
-      "coenraads.bracket-pair-colorizer-2",
-      "oderwat.indent-rainbow"
-    ]
+"contributes": {
+  "configurationDefaults": {
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "400",
+    "workbench.colorTheme": "Dev.to Syntax",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.guides.indentation": true
   },
+  "themes": [
+    {
+      "label": "Dev.to Syntax",
+      "uiTheme": "vs-dark",
+      "path": "./themes/devto-syntax-color-theme.json"
+    }
+  ],
+  "extensionDependencies": [
+    "PKief.material-icon-theme",
+    "coenraads.bracket-pair-colorizer-2",
+    "oderwat.indent-rainbow"
+  ]
+},
   "scripts": {
     "vscode:prepublish": "npm run build",
     "build": "tsc -p ./",
