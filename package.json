@@ -2,7 +2,7 @@
   "name": "devto-syntax",
   "displayName": "Dev.to Syntax",
   "description": "Auto-configure VSCode to mimic dev.to code block styling: Fira Code ligatures, color theme, icon theme, bracket and indent styling.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "MiltonVafanaZW",
   "icon": "icon.png",
   "repository": {"url": "https://github.com/nia-cloud-official/Dev.to-Syntax", "type": "public"},

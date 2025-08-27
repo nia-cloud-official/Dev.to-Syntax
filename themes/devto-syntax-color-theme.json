@@ -2,12 +2,12 @@
   "name": "Dev.to Syntax",
   "type": "light",
   "colors": {
-    "editor.background": "#ffffff",
-    "editor.foreground": "#24292e",
+    "editor.background": "#202020",
+    "editor.foreground": "#d6d6d6",
     "editorLineNumber.foreground": "#6a737d",
-    "editorCursor.foreground": "#24292e",
-    "editorIndentGuide.background1": "#e1e4e8",
-    "editorIndentGuide.activeBackground1": "#d1d5da"
+    "editorCursor.foreground": "#d6d6d6",
+    "editorIndentGuide.background1": "#30363d",
+    "editorIndentGuide.activeBackground1": "#30353a"
   },
   "tokenColors": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "scope": ["string", "constant.character.escape"],
-      "settings": { "foreground": "#032f62" }
+      "settings": { "foreground": "#ffffff" }
     },
     {
       "scope": ["support.function", "entity.name.function"],
-      "settings": { "foreground": "#6f42c1" }
+      "settings": { "foreground": "#ac88f0" }
     },
     {
       "scope": ["variable", "meta.definition.variable.name"],
-      "settings": { "foreground": "#e36209" }
+      "settings": { "foreground": "#c7c5c4" }
     },
     {
       "scope": ["punctuation.separator", "punctuation.terminator"],
