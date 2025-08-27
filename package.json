@@ -2,53 +2,81 @@
   "name": "devto-syntax",
   "displayName": "Dev.to Syntax",
   "description": "Auto-configure VSCode to mimic dev.to code block styling: Fira Code ligatures, color theme, icon theme, bracket and indent styling.",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "publisher": "MiltonVafanaZW",
-  "icon": "icon.png",
-  "keywords": ["theme", "syntax", "highlight", "dev.to"],
+  "author": {"name": "Milton Vafana", "email": "miltonhyndrex@gmail.com"},
+  "pricing":"Free",
   "repository": {"url": "https://github.com/nia-cloud-official/Dev.to-Syntax", "type": "public"},
   "engines": {
     "vscode": "^1.50.0"
   },
-  "categories": [
-    "Themes",
-    "Linters",
-    "Other"
+"categories": [
+    "Themes"
   ],
+  "icon": "icon.png",
   "main": "./out/extension.js",
   "activationEvents": [
-    "*"
+    "onStartupFinished",
+    "onCommand:devtoSyntax.pickTheme"
   ],
-"contributes": {
-  "configurationDefaults": {
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.fontWeight": "400",
-    "workbench.colorTheme": "Dev.to Syntax",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.guides.indentation": true
+  "contributes": {
+    "commands": [
+      {
+        "command": "devtoSyntax.pickTheme",
+        "title": "Dev.to Syntax: Pick Theme Variant"
+      }
+    ],
+    "configurationDefaults": {
+      "workbench.colorTheme": "Dev.to Syntax",
+      "workbench.iconTheme": "material-icon-theme",
+      "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+      "editor.fontLigatures": true,
+      "editor.fontSize": 14,
+      "editor.lineHeight": 22,
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs": "active",
+      "editor.guides.indentation": true,
+      "editor.renderWhitespace": "boundary",
+      "editor.semanticHighlighting.enabled": true
+    },
+    "themes": [
+      {
+        "label": "Dev.to Syntax",
+        "uiTheme": "vs-dark",
+        "path": "./themes/devto-syntax-dark.json"
+      },
+      {
+        "label": "Dev.to Syntax (Split UI)",
+        "uiTheme": "vs-light",
+        "path": "./themes/devto-syntax-split-ui.json"
+      },
+      {
+        "label": "Dev.to Syntax (Copilot UI)",
+        "uiTheme": "vs-light",
+        "path": "./themes/devto-syntax-copilot-ui.json"
+      }
+    ],
+    "extensionDependencies": [
+      "PKief.material-icon-theme",
+      "oderwat.indent-rainbow"
+    ]
   },
-  "themes": [
-    {
-      "label": "Dev.to Syntax",
-      "uiTheme": "vs-dark",
-      "path": "./themes/devto-syntax-color-theme.json"
-    }
+  "keywords": [
+    "dev.to",
+    "theme",
+    "syntax",
+    "fira code",
+    "ligatures",
+    "copilot"
   ],
-  "extensionDependencies": [
-    "PKief.material-icon-theme",
-    "coenraads.bracket-pair-colorizer-2",
-    "oderwat.indent-rainbow"
-  ]
-},
   "scripts": {
     "vscode:prepublish": "npm run build",
     "build": "tsc -p ./",
-    "package": "npx vsce package"
+    "package": "npx vsce package",
+    "publish": "npx vsce publish"
   },
   "devDependencies": {
-    "typescript": "^4.0.0",
-    "vscode": "^1.1.37"
+    "typescript": "^5.4.0",
+    "vscode": "^1.1.0"
   }
 }

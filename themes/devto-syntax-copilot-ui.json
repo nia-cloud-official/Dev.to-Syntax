@@ -1,0 +1,52 @@
+{
+  "name": "Dev.to Syntax (Copilot UI)",
+  "type": "light",
+  "colors": {
+    "activityBar.background": "#1e1e1e",
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#2f81f7",
+    "sideBar.background": "#1e1e1e",
+    "sideBar.foreground": "#d4d4d4",
+    "sideBarSectionHeader.background": "#1e1e1e",
+    "statusBar.background": "#1e1e1e",
+    "statusBar.foreground": "#ffffff",
+    "titleBar.activeBackground": "#1e1e1e",
+    "titleBar.activeForeground": "#f0f0f0",
+
+    "editor.background": "#ffffff",
+    "editor.foreground": "#24292e",
+    "editorCursor.foreground": "#2f81f7",
+    "editorLineNumber.foreground": "#6a737d",
+    "editorIndentGuide.background": "#e5e7eb",
+    "editorIndentGuide.activeBackground": "#d1d5db",
+    "editor.lineHighlightBackground": "#f2f4f8",
+    "editor.selectionBackground": "#b6d4fe66",
+    "editor.inactiveSelectionBackground": "#b6d4fe44",
+
+    "editorGroupHeader.tabsBackground": "#fafbfc",
+    "tab.activeBackground": "#ffffff",
+    "tab.activeForeground": "#24292e",
+    "tab.inactiveBackground": "#eef1f4",
+    "tab.inactiveForeground": "#6a737d",
+    "panel.background": "#ffffff",
+    "panel.border": "#e5e7eb",
+    "list.activeSelectionBackground": "#e6f0ff",
+    "list.hoverBackground": "#f2f7ff",
+
+    "terminal.background": "#ffffff",
+    "terminal.foreground": "#24292e",
+    "minimap.background": "#ffffff"
+  },
+  "tokenColors": [
+    { "scope": ["comment"], "settings": { "foreground": "#6a737d", "fontStyle": "italic" } },
+    { "scope": ["keyword", "storage.type"], "settings": { "foreground": "#d73a49" } },
+    { "scope": ["string"], "settings": { "foreground": "#0b5394" } },
+    { "scope": ["constant", "variable.language"], "settings": { "foreground": "#005cc5" } },
+    { "scope": ["variable", "meta.definition.variable.name"], "settings": { "foreground": "#a15c07" } },
+    { "scope": ["entity.name.function", "support.function"], "settings": { "foreground": "#6f42c1" } },
+    { "scope": ["entity.name.type", "support.class", "support.type"], "settings": { "foreground": "#1a7f37" } },
+    { "scope": ["punctuation", "meta.brace"], "settings": { "foreground": "#24292e" } },
+    { "scope": ["invalid", "illegal"], "settings": { "foreground": "#ffffff", "background": "#d73a49" } }
+  ],
+  "semanticHighlighting": true
+}

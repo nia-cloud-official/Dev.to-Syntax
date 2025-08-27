@@ -1,0 +1,48 @@
+{
+  "name": "Dev.to Syntax (Split UI)",
+  "type": "light",
+  "colors": {
+    "activityBar.background": "#1e1e1e",
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#0066cc",
+    "sideBar.background": "#1e1e1e",
+    "sideBar.foreground": "#d4d4d4",
+    "sideBarSectionHeader.background": "#1e1e1e",
+    "statusBar.background": "#1e1e1e",
+    "statusBar.foreground": "#ffffff",
+    "titleBar.activeBackground": "#1e1e1e",
+    "titleBar.activeForeground": "#e6e6e6",
+
+    "editor.background": "#f6f8fa",
+    "editor.foreground": "#24292e",
+    "editorCursor.foreground": "#0366d6",
+    "editorLineNumber.foreground": "#6a737d",
+    "editorIndentGuide.background": "#e1e4e8",
+    "editorIndentGuide.activeBackground": "#d1d5da",
+    "editor.selectionBackground": "#add6ff66",
+    "editor.inactiveSelectionBackground": "#add6ff44",
+    "editor.lineHighlightBackground": "#eaeef255",
+
+    "editorGroupHeader.tabsBackground": "#f6f8fa",
+    "tab.activeBackground": "#ffffff",
+    "tab.activeForeground": "#24292e",
+    "tab.inactiveBackground": "#eaecef",
+    "tab.inactiveForeground": "#6a737d",
+    "panel.background": "#ffffff",
+    "panel.border": "#d0d7de",
+    "list.activeSelectionBackground": "#dbe9ff",
+    "list.hoverBackground": "#f0f6ff"
+  },
+  "tokenColors": [
+    { "scope": ["comment"], "settings": { "foreground": "#6a737d", "fontStyle": "italic" } },
+    { "scope": ["keyword", "storage.type"], "settings": { "foreground": "#d73a49" } },
+    { "scope": ["string"], "settings": { "foreground": "#032f62" } },
+    { "scope": ["constant", "variable.language"], "settings": { "foreground": "#005cc5" } },
+    { "scope": ["variable", "meta.definition.variable.name"], "settings": { "foreground": "#e36209" } },
+    { "scope": ["entity.name.function", "support.function"], "settings": { "foreground": "#6f42c1" } },
+    { "scope": ["entity.name.type", "support.class", "support.type"], "settings": { "foreground": "#116329" } },
+    { "scope": ["punctuation", "meta.brace"], "settings": { "foreground": "#24292e" } },
+    { "scope": ["invalid", "illegal"], "settings": { "foreground": "#ffffff", "background": "#d73a49" } }
+  ],
+  "semanticHighlighting": true
+}
