@@ -1,0 +1,53 @@
+{
+  "name": "devto-syntax",
+  "displayName": "Dev.to Syntax",
+  "description": "Auto-configure VSCode to mimic dev.to code block styling: Fira Code ligatures, color theme, icon theme, bracket and indent styling.",
+  "version": "1.1.0",
+  "publisher": "MiltonVafanaZW",
+  "icon": "icon.png",
+  "repository": {"url": "https://github.com/nia-cloud-official/Dev.to-Syntax", "type": "public"},
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Themes",
+    "Linters",
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configurationDefaults": {
+      "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+      "editor.fontLigatures": true,
+      "editor.fontWeight": "400",
+      "editor.fontSize": 14,
+      "workbench.colorTheme": "Dev.to Syntax",
+      "workbench.iconTheme": "material-icon-theme",
+      "editor.guides.indentation": true
+    },
+    "themes": [
+      {
+        "label": "Dev.to Syntax",
+        "uiTheme": "vs-light",
+        "path": "./themes/devto-syntax-color-theme.json"
+      }
+    ],
+    "extensionDependencies": [
+      "PKief.material-icon-theme",
+      "coenraads.bracket-pair-colorizer-2",
+      "oderwat.indent-rainbow"
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "package": "npx vsce package"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vscode": "^1.1.37"
+  }
+}

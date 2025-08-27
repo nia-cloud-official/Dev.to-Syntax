@@ -1,0 +1,42 @@
+{
+  "name": "Dev.to Syntax",
+  "type": "light",
+  "colors": {
+    "editor.background": "#ffffff",
+    "editor.foreground": "#24292e",
+    "editorLineNumber.foreground": "#6a737d",
+    "editorCursor.foreground": "#24292e",
+    "editorIndentGuide.background1": "#e1e4e8",
+    "editorIndentGuide.activeBackground1": "#d1d5da"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#6a737d", "fontStyle": "italic" }
+    },
+    {
+      "scope": ["keyword", "storage"],
+      "settings": { "foreground": "#d73a49" }
+    },
+    {
+      "scope": ["constant", "variable.language"],
+      "settings": { "foreground": "#005cc5" }
+    },
+    {
+      "scope": ["string", "constant.character.escape"],
+      "settings": { "foreground": "#032f62" }
+    },
+    {
+      "scope": ["support.function", "entity.name.function"],
+      "settings": { "foreground": "#6f42c1" }
+    },
+    {
+      "scope": ["variable", "meta.definition.variable.name"],
+      "settings": { "foreground": "#e36209" }
+    },
+    {
+      "scope": ["punctuation.separator", "punctuation.terminator"],
+      "settings": { "foreground": "#586069" }
+    }
+  ]
+}
